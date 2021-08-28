@@ -4,9 +4,8 @@ package pl.kru;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
 
-public class Test implements ActionListener {
+public class Test extends JFrame implements ActionListener {
 
     JFrame frame;
     JMenuBar menuBar;
@@ -60,6 +59,8 @@ public class Test implements ActionListener {
         frame.setVisible(true);
         frame.setSize(420,420);
         frame.setJMenuBar(menuBar);
+        frame.pack();
+        frame.setLocationRelativeTo(null);
     }
 
     @Override

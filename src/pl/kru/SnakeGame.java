@@ -1,7 +1,6 @@
 package pl.kru;
 
-import javax.swing.*;
-import java.awt.event.KeyEvent;
+
 
 public class SnakeGame {
 

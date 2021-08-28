@@ -11,6 +11,7 @@ import java.util.Random;
 
 public class GamePanel extends JPanel implements ActionListener {
 
+    
     static final int SCREEN_WIDTH = 600;
     static final  int SCREEN_HEIGHT = 600;
     static final int UNIT_SIZE = 25;            // the size of the fields
@@ -57,7 +58,7 @@ public class GamePanel extends JPanel implements ActionListener {
                 g.drawLine(0, i * UNIT_SIZE, SCREEN_WIDTH, i * UNIT_SIZE);      // draws horizontal lines
             }
 
-            g.setColor(Color.blue);                                                    // set dot's color
+            g.setColor(Color.yellow);                                                    // set dot's color
             g.fillOval(dotX, dotY, UNIT_SIZE, UNIT_SIZE);                              // Fills an oval bounded by the specified rectangle with the current color.
 
             for (int i = 0; i < bodyParts; i++) {                                       // draws snake's body parts
